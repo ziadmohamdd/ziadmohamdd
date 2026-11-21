@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/ziad-elsayed-60a84022b"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+  <a href="www.linkedin.com/in/ziad-mohamed777"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://github.com/ziadmohamdd?tab=repositories"><img src="https://img.shields.io/badge/Repositories-1C2541?style=for-the-badge&logo=github&logoColor=white"/></a>
 </p>
 
