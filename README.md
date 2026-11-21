@@ -9,7 +9,6 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/ziad-elsayed-60a84022b"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://github.com/ziadmohamdd?tab=repositories"><img src="https://img.shields.io/badge/Repositories-1C2541?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <img src="https://komarev.com/ghpvc/?username=ziadmohamdd&style=for-the-badge&color=818cf8&label=PROFILE+VIEWS"/>
 </p>
 
 ---
