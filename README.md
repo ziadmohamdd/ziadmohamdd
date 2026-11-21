@@ -13,11 +13,8 @@
 ```python
 class ZiadMohamed:
     role      = "AI & ML Engineer"
-    focus     = ["EEG & biosignal deep learning", "Medical image analysis",
-                 "RAG & LLM applications", "Multi-agent systems for finance"]
-    currently = "Researching evidence verification in multi-agent investment advice"
-    approach  = "Reproducible pipelines, honest baselines, negative controls"
-
+    focus     = ["EEG & biosignal deep learning", "Image analysis",
+                 "RAG & LLM applications", "Multi-agent systems"]
     def say_hi(self):
         return "Open to research collaborations and AI/ML roles — let's talk!"
 ```
