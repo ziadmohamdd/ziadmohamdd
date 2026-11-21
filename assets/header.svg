@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1020"/>
+      <stop offset="0.55" stop-color="#111a35"/>
+      <stop offset="1" stop-color="#1a0f2e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#38bdf8"/>
+      <stop offset="0.5" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#e879f9"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#818cf8" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+    <clipPath id="round"><rect width="1200" height="300" rx="18"/></clipPath>
+    <style>
+      .title { font: 800 54px 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #f8fafc; letter-spacing: -1px; }
+      .sub   { font: 500 22px 'Cascadia Code', 'JetBrains Mono', Consolas, monospace; fill: #94a3b8; }
+      .tag   { font: 600 14px 'Cascadia Code', 'JetBrains Mono', Consolas, monospace; fill: #c7d2fe; }
+      .node  { fill: #818cf8; animation: pulse 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .n2 { animation-delay: .5s; fill: #38bdf8; }
+      .n3 { animation-delay: 1s;  fill: #e879f9; }
+      .n4 { animation-delay: 1.5s; }
+      .edge { stroke: #818cf8; stroke-opacity: .25; stroke-width: 1.5; }
+      .flow { stroke: url(#accent); stroke-width: 2; fill: none; stroke-dasharray: 8 180; animation: flow 3.5s linear infinite; }
+      .f2 { animation-delay: 1.2s; } .f3 { animation-delay: 2.3s; }
+      .chart { fill: none; stroke: url(#accent); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round;
+               stroke-dasharray: 900; stroke-dashoffset: 900; animation: draw 4s ease-out forwards; }
+      .cursor { fill: #38bdf8; animation: blink 1s steps(1) infinite; }
+      .fade { opacity: 0; animation: fadeIn 1s ease-out forwards; }
+      .d1 { animation-delay: .2s; } .d2 { animation-delay: .7s; } .d3 { animation-delay: 1.2s; }
+      @keyframes pulse { 0%,100% { transform: scale(1); opacity: .85 } 50% { transform: scale(1.5); opacity: 1 } }
+      @keyframes flow  { to { stroke-dashoffset: -188 } }
+      @keyframes draw  { to { stroke-dashoffset: 0 } }
+      @keyframes blink { 50% { opacity: 0 } }
+      @keyframes fadeIn { from { opacity: 0; transform: translateY(8px) } to { opacity: 1; transform: none } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <rect width="1200" height="300" fill="url(#bg)"/>
+    <rect width="1200" height="300" fill="url(#grid)"/>
+    <circle cx="930" cy="150" r="260" fill="url(#glow)"/>
+
+    <!-- neural network -->
+    <g>
+      <line class="edge" x1="800" y1="70"  x2="920" y2="110"/>
+      <line class="edge" x1="800" y1="70"  x2="920" y2="190"/>
+      <line class="edge" x1="800" y1="150" x2="920" y2="110"/>
+      <line class="edge" x1="800" y1="150" x2="920" y2="190"/>
+      <line class="edge" x1="800" y1="230" x2="920" y2="110"/>
+      <line class="edge" x1="800" y1="230" x2="920" y2="190"/>
+      <line class="edge" x1="920" y1="110" x2="1040" y2="80"/>
+      <line class="edge" x1="920" y1="110" x2="1040" y2="150"/>
+      <line class="edge" x1="920" y1="110" x2="1040" y2="220"/>
+      <line class="edge" x1="920" y1="190" x2="1040" y2="80"/>
+      <line class="edge" x1="920" y1="190" x2="1040" y2="150"/>
+      <line class="edge" x1="920" y1="190" x2="1040" y2="220"/>
+      <line class="edge" x1="1040" y1="80"  x2="1130" y2="150"/>
+      <line class="edge" x1="1040" y1="150" x2="1130" y2="150"/>
+      <line class="edge" x1="1040" y1="220" x2="1130" y2="150"/>
+
+      <path class="flow"    d="M800 70 L920 190 L1040 150 L1130 150"/>
+      <path class="flow f2" d="M800 230 L920 110 L1040 80 L1130 150"/>
+      <path class="flow f3" d="M800 150 L920 190 L1040 220 L1130 150"/>
+
+      <circle class="node"    cx="800"  cy="70"  r="7"/>
+      <circle class="node n2" cx="800"  cy="150" r="7"/>
+      <circle class="node n3" cx="800"  cy="230" r="7"/>
+      <circle class="node n4" cx="920"  cy="110" r="8"/>
+      <circle class="node n2" cx="920"  cy="190" r="8"/>
+      <circle class="node n3" cx="1040" cy="80"  r="7"/>
+      <circle class="node"    cx="1040" cy="150" r="7"/>
+      <circle class="node n4" cx="1040" cy="220" r="7"/>
+      <circle class="node n2" cx="1130" cy="150" r="10"/>
+    </g>
+
+    <!-- market line -->
+    <polyline class="chart" points="60,262 120,250 170,256 230,236 290,244 350,220 410,228 470,204 530,212 590,190 650,198 710,172"/>
+
+    <!-- text -->
+    <g class="fade d1"><text class="tag" x="64" y="72">&gt;_ hello world, I'm</text></g>
+    <g class="fade d2"><text class="title" x="60" y="132">Ziad Mohamed</text></g>
+    <g class="fade d3">
+      <text class="sub" x="64" y="174">AI &amp; ML Engineer · Biosignals · LLMs &amp; Agents</text>
+      <rect class="cursor" x="668" y="157" width="11" height="22"/>
+    </g>
+  </g>
+</svg>
