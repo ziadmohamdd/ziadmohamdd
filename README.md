@@ -6,11 +6,6 @@
   <a href="https://www.linkedin.com/in/ziad-mohamed777/"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&pause=1000&color=818CF8&center=true&vCenter=true&width=640&lines=Decoding+brain+signals+with+deep+learning+%F0%9F%A7%A0;Building+RAG+%26+multi-agent+LLM+systems+%F0%9F%A4%96;Teaching+models+to+read+medical+data+%F0%9F%A9%BA" alt="Typing SVG"/></a>
 </p>
 
-<p align="center">
-  <a href="www.linkedin.com/in/ziad-mohamed777"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://github.com/ziadmohamdd?tab=repositories"><img src="https://img.shields.io/badge/Repositories-1C2541?style=for-the-badge&logo=github&logoColor=white"/></a>
-</p>
-
 ---
 
 ### 🧠 About me
